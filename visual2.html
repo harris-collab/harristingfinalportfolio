@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Graduation Series – Harris Ting</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar fixed-top harris-nav">
+    <div class="container harris-nav-container">
+      <a href="index.html" style="text-decoration:none; color:inherit;">
+        <div class="nav-left">
+          <div class="nav-role">Designer &amp; Researcher</div>
+          <div class="nav-sub">Business Student @ UCSD</div>
+        </div>
+      </a>
+
+      <div class="nav-center">
+        <div class="nav-pill">
+          
+          <a href="index.html#home" class="pill-link">Home</a>
+
+          <div class="nav-dropdown">
+            <a href="index.html#work" class="pill-link">Projects</a>
+            <div class="dropdown-content">
+              <a href="project1.html">Study Buddy</a>
+              <a href="project2.html">Wedding Planner</a>
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <a href="index.html#visual" class="pill-link">Visual</a>
+            <div class="dropdown-content">
+              <a href="visual1.html">Hong Kong</a>
+              <a href="visual2.html">Graduation</a>
+              <a href="visual3.html">Portraits</a>
+            </div>
+          </div>
+
+          <a href="about.html" class="pill-link">About</a>
+          
+          <div class="nav-dropdown">
+            <a href="javascript:void(0)" class="pill-link">Contact</a>
+            <div class="dropdown-content">
+              <a href="mailto:harristing1206@gmail.com">Email</a>
+              <a href="https://www.linkedin.com/in/harris-ting-049877197" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <div class="nav-location">SF Bay Area</div>
+        <div class="nav-sub">San Diego</div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <section class="py-5 mt-4">
+      <div class="container">
+        <a href="index.html#visual" class="back-link mb-4 d-inline-block">← Back to Visuals</a>
+        
+        <h1 class="project-title mb-3">Graduation Season</h1>
+        <p class="project-subtitle mb-5">
+          Capturing the milestones, the friendships, and the iconic moments.
+        </p>
+
+        <div class="mb-5">
+
+          <div class="case-card static-card scroll-fade">
+          <div class="case-meta">UC San Diego • 2025</div>
+          <h3 class="case-title mb-3">UCSD C/O 2025</h3>
+    
+    <div class="slider-wrapper">
+      <button class="slider-btn prev-btn">❮</button>
+      
+      <div class="slider-track">
+        <img src="picsforportfolio/ucsd1.jpg" alt="Grad 1">
+        <img src="picsforportfolio/ucsd3.jpg" alt="Grad 2">
+        <img src="picsforportfolio/ucsd5.jpg" alt="Grad 3">
+        <img src="picsforportfolio/ucsd2.jpg" alt="Grad 4">
+        <img src="picsforportfolio/ucsd4.jpg" alt="Grad 5">
+        <img src="picsforportfolio/ucsd8.jpg" alt="Grad 6">
+        <img src="picsforportfolio/ucsd7.jpg" alt="Grad 7">
+        <img src="picsforportfolio/ucsd9.JPG" alt="Grad 8">
+        <img src="picsforportfolio/ucsd6.jpg" alt="Grad 9">
+      </div>
+
+      <button class="slider-btn next-btn">❯</button>
+    </div>
+  </div>
+
+  <div class="case-card static-card scroll-fade">
+    <div class="case-meta">UC BERKELEY • 2025</div>
+    <h3 class="case-title mb-3">UC Berkeley C/O 2025</h3>
+
+    <div class="slider-wrapper">
+      <button class="slider-btn prev-btn">❮</button>
+      
+      <div class="slider-track">
+        <img src="picsforportfolio/berkstol.JPG" alt="Friends 1">
+        <img src="picsforportfolio/arnav1.JPG" alt="Friends 2">
+        <img src="picsforportfolio/manoj1.JPG" alt="Friends 3">
+        <img src="picsforportfolio/nicky1.JPG" alt="Friends 4">
+        <img src="picsforportfolio/arnav2.jpg" alt="Friends 5">
+        <img src="picsforportfolio/manoj2.JPG" alt="Friends 6">
+        <img src="picsforportfolio/arnav3.jpg" alt="Friends 7">
+        <img src="picsforportfolio/berkgroup.JPG" alt="Friends 8">
+        <img src="picsforportfolio/nicky2.jpg" alt="Friends 9">
+      </div>
+
+      <button class="slider-btn next-btn">❯</button>
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </section>
+
+    <footer id="contact" class="py-3 text-center footer border-top">
+      <div>
+        <a href="mailto:harristing1206@gmail.com">Email</a>
+        <span class="mx-2">|</span>
+        <a href="https://www.linkedin.com/in/harris-ting-049877197" target="_blank">LinkedIn</a>
+      </div>
+      <small class="d-block mt-1">© <span id="year"></span> Harris Ting</small>
+    </footer>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const observerOptions = {
+        root: null, rootMargin: '0px', threshold: 0.1 
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      const fadeElements = document.querySelectorAll('.scroll-fade');
+      fadeElements.forEach(el => { observer.observe(el); });
+    });
+  </script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      
+      // 1. SELECT ALL SLIDERS
+      const sliders = document.querySelectorAll('.slider-wrapper');
+
+      // 2. LOOP THROUGH EACH SLIDER
+      sliders.forEach(slider => {
+        const track = slider.querySelector('.slider-track');
+        const prevBtn = slider.querySelector('.prev-btn');
+        const nextBtn = slider.querySelector('.next-btn');
+        const scrollAmount = 300; // How far it moves (pixels)
+
+        // 3. ADD CLICK EVENTS
+        if(track && nextBtn && prevBtn) {
+          nextBtn.addEventListener('click', () => {
+            track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+          });
+          
+          prevBtn.addEventListener('click', () => {
+            track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+          });
+        }
+      });
+
+      // (Keep your existing scroll fade / year code here if needed)
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+
+  <div id="lightbox">
+    <img id="lightbox-img" src="" alt="Enlarged view">
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      
+      // 1. MANUAL SLIDER LOGIC
+      const sliders = document.querySelectorAll('.slider-wrapper');
+      sliders.forEach(slider => {
+        const track = slider.querySelector('.slider-track');
+        const prevBtn = slider.querySelector('.prev-btn');
+        const nextBtn = slider.querySelector('.next-btn');
+        const scrollAmount = 300; 
+
+        if(track && nextBtn && prevBtn) {
+          nextBtn.addEventListener('click', () => {
+            track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+          });
+          prevBtn.addEventListener('click', () => {
+            track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+          });
+        }
+      });
+
+      // 2. LIGHTBOX LOGIC (Click to Enlarge)
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      
+      // Select all images inside slider tracks
+      const images = document.querySelectorAll('.slider-track img');
+
+      images.forEach(img => {
+        img.addEventListener('click', e => {
+          e.preventDefault(); // Stop any default behavior
+          lightboxImg.src = img.src; // Copy the image source
+          lightbox.style.display = 'flex'; // Show the overlay
+        });
+      });
+
+      // Close lightbox when clicking background
+      lightbox.addEventListener('click', e => {
+        if (e.target !== lightboxImg) {
+          lightbox.style.display = 'none';
+        }
+      });
+
+      // 3. SCROLL FADE ANIMATION
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.scroll-fade').forEach(el => observer.observe(el));
+
+      // 4. YEAR UPDATE
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+
+</body>
+</html>

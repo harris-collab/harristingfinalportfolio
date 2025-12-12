@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wedding Planner – Harris Ting</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar fixed-top harris-nav">
+    <div class="container harris-nav-container">
+
+      <a href="index.html" style="text-decoration:none; color:inherit;">
+        <div class="nav-left">
+          <div class="nav-role">Designer &amp; Researcher</div>
+          <div class="nav-sub">Business Student @ UCSD</div>
+        </div>
+      </a>
+
+      <div class="nav-center">
+        <div class="nav-pill">
+          
+          <a href="index.html#home" class="pill-link">Home</a>
+
+          <div class="nav-dropdown">
+            <a href="index.html#work" class="pill-link">Projects</a>
+            <div class="dropdown-content">
+              <a href="project1.html">Study Buddy</a>
+              <a href="project2.html">Wedding Planner</a>
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <a href="index.html#visual" class="pill-link">Visual</a>
+            <div class="dropdown-content">
+              <a href="visual1.html">Hong Kong</a>
+              <a href="visual2.html">Graduation</a>
+              <a href="visual3.html">Portraits</a>
+            </div>
+          </div>
+
+          <a href="about.html" class="pill-link">About</a>
+          
+          <div class="nav-dropdown">
+            <a href="javascript:void(0)" class="pill-link">Contact</a>
+            <div class="dropdown-content">
+              <a href="mailto:harristing1206@gmail.com">Email</a>
+              <a href="https://www.linkedin.com/in/harris-ting-049877197" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <div class="nav-location">SF Bay Area</div>
+        <div class="nav-sub">San Diego</div>
+      </div>
+
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <section class="py-5 mt-4">
+      <div class="container">
+        <a href="index.html#work" class="back-link mb-4 d-inline-block">← Back to Projects</a>
+        
+        <h1 class="project-title mb-3">Wedding Banquet Planner</h1>
+        <p class="project-subtitle mb-5">
+          A responsive web tool designed to organize guest lists and dining logistics seamlessly.
+        </p>
+
+        <div class="row project-meta border-top border-bottom py-4 mb-5">
+          <div class="col-6 col-md-3 mb-3 mb-md-0">
+            <span class="meta-label">ROLE</span>
+            <span class="meta-value">Front-End Developer</span>
+          </div>
+          <div class="col-6 col-md-3 mb-3 mb-md-0">
+            <span class="meta-label">CONTEXT</span>
+            <span class="meta-value">COGS 3 Lab</span>
+          </div>
+          <div class="col-6 col-md-3">
+            <span class="meta-label">TOOLS</span>
+            <span class="meta-value">JavaScript, CSS</span>
+          </div>
+          <div class="col-6 col-md-3">
+            <span class="meta-label">YEAR</span>
+            <span class="meta-value">2025</span>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <a href="../lab6a_harris/TingLab6PartA.html" target="_blank" class="btn btn-lg px-5 btn-accent">
+            Launch Live Project ↗
+          </a>
+          <p class="text-muted mt-2 small">Opens in a new tab</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <h3 class="mb-3">Overview</h3>
+            <p class="mb-4">
+              Managing large events requires precision. For this project, I expanded a standard COGS 3 assignment into a fully responsive interface. The application calculates guest totals, manages seating arrangements, and provides a clear visual summary for event planners.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer id="contact" class="py-3 text-center footer border-top">
+      <div>
+        <a href="mailto:harristing1206@gmail.com">Email</a>
+        <span class="mx-2">|</span>
+        <a href="https://www.linkedin.com/in/harris-ting-049877197" target="_blank">LinkedIn</a>
+      </div>
+      <small class="d-block mt-1">© <span id="year"></span> Harris Ting</small>
+    </footer>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
