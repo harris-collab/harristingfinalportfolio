@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wedding Banquet Planner</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h1 class="card-title mb-3">Wedding Banquet Planner</h1>
+        <p class="card-text">
+          This page will calculate how to seat your guests as evenly as possible.
+        </p>
+        <p id="output" class="fw-bold"></p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    var guestsStr=prompt("How many guests?");
+    var tablesStr=prompt("How many tables?");
+
+    var guests=parseInt(guestsStr,10);
+    var tables=parseInt(tablesStr,10);
+    
+    var basePerTable=Math.floor(guests/tables);
+    var tablesWithExtra=guests % tables;
+    var tablesWithBase=tables-tablesWithExtra;
+
+    var parts=[];
+
+    if(tablesWithExtra>0){
+      var wordExtra=(tablesWithExtra===1)?"table":"tables";
+      parts.push(
+        tablesWithExtra+" "+wordExtra+" of "+(basePerTable+1)
+      );
+    }
+
+    if (tablesWithBase > 0) {
+      var wordBase=(tablesWithBase===1)?"table":"tables";
+      parts.push(
+        tablesWithBase + " " +wordBase+" of "+basePerTable
+      );
+    }
+
+    var seatingDescription=parts.join(", and ");
+
+    var message="Your "+guests+" guests will be seated as follows: "+seatingDescription+".";
+
+    alert(message);
+
+    document.getElementById("output").textContent=message;
+    
+  </script>
+  </body>
+</html>
+   
